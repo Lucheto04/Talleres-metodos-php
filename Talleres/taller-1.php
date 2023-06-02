@@ -17,7 +17,7 @@
     $clave_encontrada = array_search($resultado, $planetas);
 
     if ($clave_encontrada !== false) {
-        echo "El planeta que buscasque es $clave_encontrada";
+        echo "El planeta que buscaste es $clave_encontrada";
     } else {
         echo "El planeta que buscaste es no esta en nuestro sistema solar";
     };
