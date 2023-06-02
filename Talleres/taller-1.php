@@ -1,5 +1,4 @@
 <?php
-
     $planetas = array(
         "Sun" => 1,
         "Mercury" => 2,
@@ -11,17 +10,13 @@
         "Uranus" => 8,
         "Neptune" => 9
     );
-
-
-    $resultado = $_GET['numero'];
-    $clave_encontrada = array_search($resultado, $planetas);
-
+    $numero = $_GET['numero'];
+    $clave_encontrada = array_search($numero, $planetas);
     if ($clave_encontrada !== false) {
         echo "El planeta que buscaste es $clave_encontrada";
     } else {
         echo "El planeta que buscaste es no esta en nuestro sistema solar";
     };
-
     echo "<hr>";
     echo '<a href="index.html">Volver</a>';
 ?>
