@@ -96,7 +96,7 @@
     <div class="row text-center mt-3">
         <div class="col-12">
             <h2>Taller 6.</h1>
-            <p>Tienes que buscar los planetas por su nombre en ingles y con la primer letra en mayuscula.</p>
+            <p>Tienes que buscar los planetas por su nombre en ingles.</p>
         </div>
     </div>
     <form action="taller-6.php" method="GET">
