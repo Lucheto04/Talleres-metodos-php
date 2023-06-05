@@ -1,16 +1,16 @@
 <?php 
-   $planetas = array(
-    "Sun",
-    "Mercury",
-    "Venus",
-    "Earth",
-    "Mars",
-    "Jupiter",
-    "Saturn",
-    "Uranus",
-    "Neptune"
+    $planetas = array(
+    "sun",
+    "mercury",
+    "venus",
+    "earth",
+    "mars",
+    "jupiter",
+    "saturn",
+    "uranus",
+    "neptune"
     );
-    $busqueda = (string) $_GET['planeta'];
+    $busqueda = (string) strtolower($_GET['planeta']);
     if (in_array($busqueda, $planetas, true)) {
         echo "El planeta $busqueda si esta dentro del sistema solar";
     } else {
