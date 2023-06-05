@@ -16,5 +16,5 @@
     $total = array_reduce($flota, 'masas_total');
     echo "La masa total es de $total";
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>

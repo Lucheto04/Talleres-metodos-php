@@ -13,5 +13,5 @@
     $planeta_aleatorio = array_rand($planetas);
     print_r("El explorador va a ir al planeta: ".$planetas[$planeta_aleatorio]); 
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>

@@ -1,6 +1,9 @@
 <?php 
     session_start();
-    $satelites = array(
+
+    isset($_SESSION['planetas'])
+    ?$_SESSION['planetas']
+    :$_SESSION['planetas'] = array(
         "Earth" => array(),
         "Mars" =>array(),
         "Jupiter" => array(),
@@ -8,20 +11,25 @@
         "Uranus" => array(),
     );
 
-    $planeta = $_POST['planetas'];
+    if(isset($_POST['planetas'])) {
+        $planetas = $_SESSION['planetas'];
+        $planeta = $_POST['planetas'];
+        $satelite = $_POST['satelite'];
 
-    $satelite = $_POST['satelite'];
+        array_push($planetas[$planeta], $satelite);
+        $_SESSION['planetas'] = $planetas;
+        print_r($$_SESSION['planetas']);
+    }
 
-    $_SESSION['sat'] = $satelites;
 
-    print_r($_SESSION);
+
     // print_r($planeta);
     
     // Narray_push($satelites[$planeta], $satelite);
 
 
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 
     if ($_POST['agregar']) {
         $pagina = $_SERVER["HTTP_REFERER"]."#taller-12";

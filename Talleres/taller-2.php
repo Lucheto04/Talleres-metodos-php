@@ -3,5 +3,5 @@
     $planetass = array_fill(0, $numero, 'Deshabitado');
     print_r($planetass);
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>

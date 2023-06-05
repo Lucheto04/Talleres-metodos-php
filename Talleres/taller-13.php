@@ -16,5 +16,5 @@
     print_r(array_reverse($planetas));
 
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>

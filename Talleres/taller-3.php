@@ -15,5 +15,5 @@
     });
     print_r($planetas_habitables);
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>

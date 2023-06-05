@@ -22,5 +22,5 @@
         echo "El tipo de nave que buscaste no esta en nuestra flota";
     }
     echo "<hr>";
-    echo '<a href="index.html">Volver</a>';
+    echo '<a href="index.php">Volver</a>';
 ?>
