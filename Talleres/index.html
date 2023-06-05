@@ -209,15 +209,15 @@
 
     <div class="row text-center mt-3">
         <div class="col-12">
-            <h2>Taller 12.</h1>
-            <p>Para este taller perimero seleccione a que planeta le quiere añadir un satelite, luego dele al boton de agregar, al final si quiere ver que satelites agrego del al boton de finalizar.</p>
+            <h2 id="taller-12">Taller 12.</h1>
+            <p>Para este taller primero seleccione a que planeta le quiere añadir un satelite, luego cree su satelite y dele al boton de agregar, al final si quiere ver que satelites agrego dele al boton de finalizar.</p>
         </div>
     </div>
     <form action="taller-12.php" method="POST">
         <div class="row planeta">
             <div class="col-2">
                 <div class="form-floating mt-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="planetas">
                         <option value="Earth">Earth</option>
                         <option value="Mars">Mars</option>
                         <option value="Jupiter">Jupiter</option>
@@ -227,12 +227,12 @@
                     <label for="floatingSelect">Works with selects</label>
                 </div>
                 <div class="form-floating">
-                    <input type="text" class="form-control mt-3" name="tipo" placeholder="Cree su satelite">
+                    <input type="text" class="form-control mt-3" name="satelite" placeholder="Cree su satelite">
                     <label for="floatingInput">Cree su satelite</label>
                 </div>
                 <div class="botones mt-3">
-                    <input type="button" value="Agregar">
-                    <input type="button" value="Finalizar">
+                    <input type="submit" value="Agregar" name="agregar">
+                    <input type="submit" value="Finalizar" name="finalizar">
                 </div>
             </div>
         </div>
