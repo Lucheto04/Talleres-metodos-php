@@ -19,5 +19,5 @@
     );
     print_r(array_intersect($planetas1, $planetas2));
     echo "<hr>";
-    echo '<a href="index.php">Volver</a>';
+    echo '<a href="index.html">Volver</a>';
 ?>

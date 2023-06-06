@@ -10,6 +10,10 @@
         "Saturn" => array(),
         "Uranus" => array(),
     );
+    $planetas = $_SESSION['planetas'];
+    $planeta = $_POST['planetas'];
+    $satelite = $_POST['satelite'];
+
 
     if(isset($_POST['planetas'])) {
         $planetas = $_SESSION['planetas'];
@@ -21,15 +25,11 @@
         print_r($$_SESSION['planetas']);
     }
 
-
-
-    // print_r($planeta);
-    
-    // Narray_push($satelites[$planeta], $satelite);
+    print_r($planetas);
 
 
     echo "<hr>";
-    echo '<a href="index.php">Volver</a>';
+    echo '<a href="index.html">Volver</a>';
 
     if ($_POST['agregar']) {
         $pagina = $_SERVER["HTTP_REFERER"]."#taller-12";

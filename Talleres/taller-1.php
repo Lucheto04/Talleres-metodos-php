@@ -18,5 +18,5 @@
         echo "El planeta que buscaste es no esta en nuestro sistema solar";
     };
     echo "<hr>";
-    echo '<a href="index.php">Volver</a>';
+    echo '<a href="index.html">Volver</a>';
 ?>

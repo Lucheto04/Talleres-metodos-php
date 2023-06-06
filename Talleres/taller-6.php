@@ -17,5 +17,5 @@
         echo "El planeta $busqueda no esta dentro del sistema solar";
     };
     echo "<hr>";
-    echo '<a href="index.php">Volver</a>';
+    echo '<a href="index.html">Volver</a>';
 ?>
