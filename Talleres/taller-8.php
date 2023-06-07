@@ -1,5 +1,5 @@
 <?php 
-   $planetas = array(
+    $planetas = array(
     "Sun",
     "Mercury",
     "Venus",
